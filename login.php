@@ -1,3 +1,4 @@
+<html>
 <form name="login_form">
   <div class="login_form_top">
     <h1>ログイン画面</h1>
@@ -9,3 +10,4 @@
   </div>
   <button type="submit">ログイン</button>
 </form>
+<html>
