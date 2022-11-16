@@ -1,5 +1,5 @@
 <html>
-<form name="login_form action="sessionChk.php" method="post">
+<form name="login_form" action="sessionChk.php" method="post">
   <div class="login_form_top">
     <h1>ログイン画面</h1>
     <p>ユーーザID、パスワードをご入力の上、「ログイン」ボタンをクリックしてください。</p>
