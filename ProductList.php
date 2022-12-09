@@ -49,9 +49,10 @@
 		<span class = 'snap-title'>
 			<h1>STYLE SNAP</h1>
 		</span>
+		<?php session_start(); echo $_SESSION[email];      ?>
 		<!--↑ここまでがヘッダーのhtml↑  -->
 
-		<div class = 'container-fluid'>
+		<div class = 'container'>
 		<div class = 'row'>
 			<div class="col-md-6 alert-dark text-center">
 			<?php
@@ -65,7 +66,7 @@
 					}else{
 						echo "データがありません";
 					}
-					printf('<div class="item"><img src="./img/%s" width="392" height="560"></div>', $img);
+					printf('<div class="item w-auto p-3"><img src="./img/%s" class="w-100 p-3"></div>', $img);
 				}
 				echo "<form action='AddCart.php' method='post'><button class='btn btn-secondary' type='submit' name='cart' value='A0'>カートに入れる</button></form>";
 				$searchArray2 = $outfitsearch->outfitData($number);
@@ -93,7 +94,7 @@
 					}else{
 						echo "データがありません";
 					}
-					printf('<div class="item"><img src="./img/%s" width="392" height="560"></div>', $img);
+					printf('<div class="item w-auto p-3"><img src="./img/%s" class="w-100 p-3"></div>', $img);
 				}
 				echo "<form action='AddCart.php' method='post'><button class='btn btn-secondary' type='submit' name='cart' value='B0'>カートに入れる</button></form>";
 

@@ -5,8 +5,8 @@
     	$email = $_POST['email'];
     	$password = $_POST['password'];
     	$sessionchk->SessionSet($email,$password);
-
-
+	$_SESSION['email'] = $email;
+        echo '$_SESSION['email'];
 	
 
 	require_once __DIR__ . '/dbconnect.php';
